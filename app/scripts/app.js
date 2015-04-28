@@ -9,19 +9,20 @@
  * Main module of the application.
  */
 angular
-  .module('qubodmApp', [
+  .module('zafiro.mara', [
     'ngAnimate',
     'ngAria',
     'ngCookies',
     'ngMessages',
     'ngResource',
-    'ngRoute',
+//    'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ngMaterial'
+    'ngMaterial',
+    'zafiro'
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
+  .config(function () {
+    /*$routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
@@ -32,5 +33,5 @@ angular
       })
       .otherwise({
         redirectTo: '/'
-      });
+      });*/
   });
